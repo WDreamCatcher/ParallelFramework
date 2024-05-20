@@ -1,0 +1,77 @@
+[1693459229.359736] [login08:215865:0]     ucp_context.c:1019 UCX  WARN  network devices 'mlx5_1:1','mlx5_2:1','mlx5_3:1' are not available, please use one or more of: 'docker0'(tcp), 'enp97s0f0'(tcp), 'enp97s0f1'(tcp), 'flannel.1'(tcp), 'ib0'(tcp), 'lo'(tcp), 'mlx5_0:1'(ib)
+*Heading
+ Taylorbar_3d.inp
+*NODE
+1, 0, 0, 0
+2, 12.16000, 0, 0
+3, 12.16000, 12.16000, 0
+4, 0, 12.16000, 0
+5, 0, 0, 36.48000
+6, 12.16000, 0, 36.48000
+7, 12.16000, 12.16000, 36.48000
+8, 0, 12.16000, 36.48000
+9, 0, 0, 12.16000
+10, 0, 0, 24.32000
+11, 12.16000, 0, 12.16000
+12, 12.16000, 0, 24.32000
+13, 12.16000, 12.16000, 12.16000
+14, 12.16000, 12.16000, 24.32000
+15, 0, 12.16000, 12.16000
+16, 0, 12.16000, 24.32000
+******* E L E M E N T S *************
+*ELEMENT, type=T3D2, ELSET=Line1
+9, 1, 2
+*ELEMENT, type=T3D2, ELSET=Line2
+10, 2, 3
+*ELEMENT, type=T3D2, ELSET=Line3
+11, 3, 4
+*ELEMENT, type=T3D2, ELSET=Line4
+12, 4, 1
+*ELEMENT, type=T3D2, ELSET=Line6
+13, 5, 6
+*ELEMENT, type=T3D2, ELSET=Line7
+14, 6, 7
+*ELEMENT, type=T3D2, ELSET=Line8
+15, 7, 8
+*ELEMENT, type=T3D2, ELSET=Line9
+16, 8, 5
+*ELEMENT, type=T3D2, ELSET=Line11
+17, 1, 9
+18, 9, 10
+19, 10, 5
+*ELEMENT, type=T3D2, ELSET=Line12
+20, 2, 11
+21, 11, 12
+22, 12, 6
+*ELEMENT, type=T3D2, ELSET=Line16
+23, 3, 13
+24, 13, 14
+25, 14, 7
+*ELEMENT, type=T3D2, ELSET=Line20
+26, 4, 15
+27, 15, 16
+28, 16, 8
+*ELEMENT, type=CPS4, ELSET=Surface1
+29, 1, 2, 3, 4
+*ELEMENT, type=CPS4, ELSET=Surface13
+30, 1, 2, 11, 9
+31, 9, 11, 12, 10
+32, 10, 12, 6, 5
+*ELEMENT, type=CPS4, ELSET=Surface17
+33, 2, 3, 13, 11
+34, 11, 13, 14, 12
+35, 12, 14, 7, 6
+*ELEMENT, type=CPS4, ELSET=Surface21
+36, 3, 4, 15, 13
+37, 13, 15, 16, 14
+38, 14, 16, 8, 7
+*ELEMENT, type=CPS4, ELSET=Surface25
+39, 4, 1, 9, 15
+40, 15, 9, 10, 16
+41, 16, 10, 5, 8
+*ELEMENT, type=CPS4, ELSET=Surface26
+42, 5, 6, 7, 8
+*ELEMENT, type=C3D8, ELSET=Volume1
+43, 1, 2, 3, 4, 9, 11, 13, 15
+44, 9, 11, 13, 15, 10, 12, 14, 16
+45, 10, 12, 14, 16, 5, 6, 7, 8
